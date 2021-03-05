@@ -1,0 +1,43 @@
+.advices {
+  margin-top: 125px;
+
+  &__title {
+    color: #757aa5;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70px;
+    font-family: Montserrat, serif;
+    line-height: 109.4%;
+    text-align: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-areas:
+      'A B D'
+      'A C D';
+    grid-gap: 30px;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 87px;
+
+    > *:nth-child(1) {
+      grid-area: A;
+      margin-top: 210px;
+    }
+
+    > *:nth-child(2) {
+      grid-area: B;
+    }
+
+    > *:nth-child(3) {
+      grid-area: C;
+    }
+
+    > *:nth-child(4) {
+      grid-area: D;
+      margin-top: 119px;
+    }
+  }
+}
