@@ -14,10 +14,10 @@ button {
   background: none;
   color: inherit;
   cursor: pointer;
-}
 
-button:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 ul {
