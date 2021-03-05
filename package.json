@@ -1,7 +1,7 @@
 {
   "name": "diamaint",
   "scripts": {
-    "start": "index.html"
+    "start": "cd public && index.html"
   },
   "devDependencies": {
     "prettier": "^2.2.1",
