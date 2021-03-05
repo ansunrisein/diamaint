@@ -14,30 +14,29 @@
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 1235px;
 }
 .header__navigation {
   display: flex;
+  flex: 1;
   align-items: center;
 }
-.header__navigation__logo {
+.header__logo {
   width: 67px;
   height: 67px;
   margin-right: 80px;
 }
-.header__navigation__text {
+.header__link {
   margin-right: 25px;
   padding: 25px 15px;
   opacity: 0.5;
   transition: all 150ms linear;
 }
-.header__navigation__text:hover {
+.header__link:hover {
   border-radius: 3px;
   background: rgba(81, 80, 118, 0.1);
   opacity: 1;
 }
-.header__box__basket {
+.header__cart {
   position: relative;
   display: flex;
   align-items: center;
@@ -45,10 +44,14 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
+  background-image: url("assets/basket.png");
+  background-position: center;
+  background-size: 20px 24px;
+  background-repeat: no-repeat;
 }
-.header__box__basket::after {
-  content: "1";
+.header__cart::after {
+  content: attr(data-cart-size);
   position: absolute;
   top: 0;
   right: 0;
@@ -65,23 +68,21 @@
   line-height: 17px;
   text-transform: uppercase;
 }
-.header__box__basket-content {
-  width: 20px;
-  height: 24px;
-}
-.header__box__social {
+.header__social {
   display: flex;
   flex-direction: column;
 }
-.header__box {
-  display: flex;
-  align-items: center;
-}
-.header__box__social-text {
+.header__social-link {
   margin-left: 36px;
   font-weight: 500;
   font-size: 16px;
   line-height: 38px;
+}
+
+.layout {
+  width: 1388px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body {
