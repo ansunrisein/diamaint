@@ -2,5 +2,8 @@
   "name": "diamaint",
   "scripts": {
     "start": "index.html"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
