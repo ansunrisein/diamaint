@@ -1,0 +1,25 @@
+.pagination {
+  @mixin button {
+    width: 74px;
+    height: 74px;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: initial;
+    }
+  }
+
+  &__button-prev {
+    @include button;
+
+    background: url('../public/assets/pagination-arrow.png');
+    transform: scaleX(-1);
+  }
+
+  &__button-next {
+    @include button;
+
+    margin-left: 19px;
+    background: url('../public/assets/pagination-arrow.png');
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .about {
   color: #888794;
   font-size: 18px;
@@ -187,6 +188,27 @@
   margin: 80px auto 0;
 }
 
+.pagination__button-prev {
+  width: 74px;
+  height: 74px;
+  background: url("../public/assets/pagination-arrow.png");
+  transform: scaleX(-1);
+}
+.pagination__button-prev:disabled {
+  opacity: 0.5;
+  cursor: initial;
+}
+.pagination__button-next {
+  width: 74px;
+  height: 74px;
+  margin-left: 19px;
+  background: url("../public/assets/pagination-arrow.png");
+}
+.pagination__button-next:disabled {
+  opacity: 0.5;
+  cursor: initial;
+}
+
 .product-card {
   position: relative;
   display: flex;
@@ -249,6 +271,180 @@
   display: flex;
   justify-content: space-between;
   margin: 0 18px;
+}
+
+.promo-product {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background: #f7f7fa;
+  color: #515076;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 24px;
+}
+.promo-product + .promo-product {
+  margin-left: 35px;
+}
+.promo-product_small {
+  height: 600px;
+}
+.promo-product_medium {
+  height: 700px;
+}
+.promo-product_big {
+  height: 800px;
+}
+.promo-product__discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #515076;
+  font-size: 36px;
+  font-family: Montserrat, serif;
+  line-height: 49px;
+}
+.promo-product_small .promo-product__discount {
+  height: 100px;
+  margin-bottom: 7px;
+  background: rgba(81, 80, 118, 0.1);
+  font-weight: normal;
+}
+.promo-product_medium .promo-product__discount {
+  height: 150px;
+  margin-bottom: 57px;
+  background: rgba(81, 80, 118, 0.15);
+  font-weight: 500;
+}
+.promo-product_big .promo-product__discount {
+  height: 200px;
+  margin-bottom: 107px;
+  background: rgba(81, 80, 118, 0.2);
+  font-weight: 600;
+}
+.promo-product__description {
+  flex: 1;
+  margin: 10px 40px 0;
+}
+.promo-product__footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px 35px;
+}
+.promo-product__price {
+  color: #515076;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: Montserrat, serif;
+  line-height: 135.99%;
+}
+.promo-product__old-price {
+  margin-right: 15px;
+  color: rgba(81, 80, 118, 0.6);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 24px;
+  text-decoration-line: line-through;
+}
+
+.promo {
+  position: relative;
+  width: 800px;
+  height: 521px;
+  padding: 58px 0 58px 63px;
+  background: #f7f7fa;
+  box-shadow: -40px 40px 0 #515076;
+}
+.promo::before {
+  content: "для нормальной кожи";
+  position: absolute;
+  bottom: 6px;
+  left: -6px;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  font-family: Montserrat, serif;
+  line-height: 26px;
+  letter-spacing: 0.17em;
+  text-align: right;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  will-change: transform;
+}
+.promo__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 28px;
+  border-radius: 50%;
+  background: #edecf7;
+  color: #515076;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 109.4%;
+  font-feature-settings: "pnum" on, "onum" on;
+}
+.promo__title {
+  width: 337px;
+  margin-bottom: 40px;
+  color: #4c5072;
+  font-weight: 300;
+  font-size: 30px;
+  font-family: Montserrat, serif;
+  line-height: 130%;
+}
+.promo__description {
+  width: 433px;
+  color: #888794;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Montserrat, serif;
+  line-height: 199.99%;
+}
+.promo__image {
+  float: right;
+}
+
+.promos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+.promos__carousel {
+  display: flex;
+  justify-content: space-between;
+}
+.promos__title {
+  color: #757aa5;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 70px;
+  font-family: Montserrat, serif;
+  line-height: 109.4%;
+}
+.promos__text {
+  width: 333px;
+  margin: 100px 0 110px;
+  color: #888794;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 199.99%;
+}
+.promos__products {
+  display: flex;
+  align-items: flex-end;
+  align-self: center;
+  margin-top: 270px;
 }
 
 body {

@@ -1,0 +1,74 @@
+.promo {
+  position: relative;
+
+  width: 800px;
+  height: 521px;
+
+  padding: 58px 0 58px 63px;
+
+  background: #f7f7fa;
+  box-shadow: -40px 40px 0 #515076;
+
+  &::before {
+    content: 'для нормальной кожи';
+    position: absolute;
+    bottom: 6px;
+    left: -6px;
+    color: #fff;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    font-family: Montserrat, serif;
+    line-height: 26px;
+    letter-spacing: 0.17em;
+    text-align: right;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    will-change: transform;
+  }
+
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    margin-bottom: 28px;
+
+    border-radius: 50%;
+    background: #edecf7;
+
+    color: #515076;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    line-height: 109.4%;
+    font-feature-settings: 'pnum' on, 'onum' on;
+  }
+
+  &__title {
+    width: 337px;
+    margin-bottom: 40px;
+
+    color: #4c5072;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: Montserrat, serif;
+    line-height: 130%;
+  }
+
+  &__description {
+    width: 433px;
+    color: #888794;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Montserrat, serif;
+    line-height: 199.99%;
+  }
+
+  &__image {
+    float: right;
+  }
+}

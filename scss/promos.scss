@@ -1,0 +1,40 @@
+.promos {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 180px;
+
+  &__carousel {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #757aa5;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70px;
+    font-family: Montserrat, serif;
+    line-height: 109.4%;
+  }
+
+  &__text {
+    width: 333px;
+    margin: 100px 0 110px;
+
+    color: #888794;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    line-height: 199.99%;
+  }
+
+  &__products {
+    display: flex;
+    align-items: flex-end;
+    align-self: center;
+
+    margin-top: 270px;
+  }
+}

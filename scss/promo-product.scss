@@ -1,0 +1,98 @@
+.promo-product {
+  display: flex;
+  flex-direction: column;
+
+  width: 350px;
+
+  background: #f7f7fa;
+
+  color: #515076;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 24px;
+
+  & + & {
+    margin-left: 35px;
+  }
+
+  &_small {
+    height: 600px;
+  }
+
+  &_medium {
+    height: 700px;
+  }
+
+  &_big {
+    height: 800px;
+  }
+
+  &__discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #515076;
+    font-size: 36px;
+    font-family: Montserrat, serif;
+    line-height: 49px;
+  }
+
+  &_small &__discount {
+    height: 100px;
+    margin-bottom: 7px;
+
+    background: rgba(81, 80, 118, 0.1);
+    font-weight: normal;
+  }
+
+  &_medium &__discount {
+    height: 150px;
+    margin-bottom: 57px;
+
+    background: rgba(81, 80, 118, 0.15);
+    font-weight: 500;
+  }
+
+  &_big &__discount {
+    height: 200px;
+    margin-bottom: 107px;
+
+    background: rgba(81, 80, 118, 0.2);
+    font-weight: 600;
+  }
+
+  &__description {
+    flex: 1;
+    margin: 10px 40px 0;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 40px 35px;
+  }
+
+  &__price {
+    color: #515076;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+    line-height: 135.99%;
+  }
+
+  &__old-price {
+    margin-right: 15px;
+
+    color: rgba(81, 80, 118, 0.6);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    line-height: 24px;
+    text-decoration-line: line-through;
+  }
+}
