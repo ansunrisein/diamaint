@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-hudochenkov/order"
+  ],
+  "rules": {
+    "order/properties-alphabetical-order": null,
+    "declaration-empty-line-before": null,
+    "no-eol-whitespace": null,
+    "max-nesting-depth": [
+      3,
+      {
+        "ignore": [
+          "pseudo-classes"
+        ]
+      }
+    ]
+  }
+}
