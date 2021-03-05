@@ -1,0 +1,78 @@
+.product-card {
+  $root: &;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 329px;
+  height: 521px;
+  padding: 62px 20px 49px;
+
+  background: #f7f7fa;
+
+  &_big {
+    width: 380px;
+    height: 600px;
+    padding-top: 69px;
+
+    #{ $root }__price {
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    flex: 1;
+    margin: 18px 18px 0;
+  }
+
+  &__type {
+    color: #a5a3b9;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Montserrat, serif;
+    line-height: 199.99%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    margin-top: 9px;
+
+    color: #515076;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+    line-height: 135.99%;
+  }
+
+  &__price {
+    color: #515076;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+    line-height: 135.99%;
+  }
+
+  &__old-price {
+    margin-right: 15px;
+
+    color: rgba(81, 80, 118, 0.6);
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    line-height: 135.99%;
+    text-decoration-line: line-through;
+  }
+
+  &__discount {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px;
+  }
+}

@@ -168,6 +168,89 @@
   margin-left: auto;
 }
 
+.offers {
+  margin-top: 510px;
+}
+.offers__choose {
+  color: #757aa5;
+  font-weight: 200;
+  font-size: 70px;
+  font-family: Montserrat, serif;
+  line-height: 109.4%;
+  text-align: center;
+}
+.offers__cards {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 1098px;
+  margin: 80px auto 0;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 329px;
+  height: 521px;
+  padding: 62px 20px 49px;
+  background: #f7f7fa;
+}
+.product-card_big {
+  width: 380px;
+  height: 600px;
+  padding-top: 69px;
+}
+.product-card_big .product-card__price {
+  font-size: 24px;
+}
+.product-card__description {
+  flex: 1;
+  margin: 18px 18px 0;
+}
+.product-card__type {
+  color: #a5a3b9;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: Montserrat, serif;
+  line-height: 199.99%;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+.product-card__name {
+  margin-top: 9px;
+  color: #515076;
+  font-size: 20px;
+  font-family: Montserrat, serif;
+  line-height: 135.99%;
+}
+.product-card__price {
+  color: #515076;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: Montserrat, serif;
+  line-height: 135.99%;
+}
+.product-card__old-price {
+  margin-right: 15px;
+  color: rgba(81, 80, 118, 0.6);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 135.99%;
+  text-decoration-line: line-through;
+}
+.product-card__discount {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 18px;
+}
+
 body {
   overflow-x: hidden;
 }
