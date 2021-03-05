@@ -1,0 +1,81 @@
+.authors {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 144px;
+
+  &__title {
+    margin-bottom: 55px;
+
+    color: #757aa5;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 70px;
+    font-family: Montserrat, serif;
+    line-height: 109.4%;
+  }
+
+  &__name {
+    color: #515076;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    font-family: Montserrat, serif;
+    line-height: 199.99%;
+  }
+
+  &__description {
+    margin-top: 30px;
+    margin-right: 121px;
+
+    color: #888794;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    font-family: Montserrat, serif;
+    line-height: 180%;
+  }
+
+  &__quote {
+    display: flex;
+
+    margin-top: 40px;
+    padding-right: 196px;
+
+    color: #888794;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    line-height: 160%;
+    quotes: '“' '“';
+
+    &::before {
+      content: open-quote;
+
+      margin-right: 42px;
+
+      color: #77877f;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 60px;
+      font-family: Circe, serif;
+      line-height: 54px;
+    }
+  }
+
+  &__mini-images {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 64px;
+    padding-right: 196px;
+  }
+
+  &__mini-image {
+    filter: drop-shadow(0 -6px 0 #515076);
+
+    &[aria-disabled='true'] {
+      opacity: 0.5;
+    }
+  }
+}
