@@ -1,3 +1,86 @@
+.about {
+  color: #888794;
+  font-size: 18px;
+  font-family: Montserrat, serif;
+  line-height: 170%;
+}
+.about__title {
+  margin: 128px 0 0;
+  color: #515076;
+  font-size: 230px;
+  font-family: Playfair Display, serif;
+  line-height: 92.4%;
+}
+.about__description {
+  display: grid;
+  grid-template-columns: 387px 391px 400px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.about__origins {
+  margin-top: 34px;
+  color: #63678c;
+  font-size: 36px;
+  font-family: Montserrat, serif;
+  line-height: 132.67%;
+}
+.about__ingredients-control {
+  margin-top: 659px;
+}
+.about__cosmetic {
+  margin-top: 72px;
+}
+.about__button-choose {
+  width: 270px;
+  margin: 96px 0;
+  padding: 27px;
+  border-radius: 100px;
+  background: #515076;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  font-size: 13px;
+  font-family: Montserrat, serif;
+  line-height: 16px;
+  letter-spacing: 0.32em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about__remark {
+  width: 172px;
+  margin-left: auto;
+  color: #888794;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Work Sans, serif;
+  line-height: 29px;
+  letter-spacing: 0.3em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.about__star {
+  margin-top: 536px;
+  font-weight: 300;
+  font-size: 37px;
+}
+.about__natural-ingredients {
+  margin-top: 96px;
+  color: #757aa5;
+  font-weight: 300;
+  font-size: 36px;
+  font-family: Montserrat, serif;
+  line-height: 39px;
+}
+.about__translate {
+  font-weight: 500;
+}
+.about__translate b {
+  color: #8888a8;
+  font-weight: bold;
+}
+.about__natural-force {
+  margin-top: 32px;
+}
+
 .header {
   display: flex;
   align-items: center;
