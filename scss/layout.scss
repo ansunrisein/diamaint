@@ -3,3 +3,67 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.dandelion {
+  position: absolute;
+  top: -50px;
+  left: 469px;
+  z-index: -1;
+
+  width: 1455px;
+  height: 1113px;
+}
+
+.eucalyptus {
+  position: absolute;
+  top: 710px;
+  left: -160px;
+  z-index: -1;
+
+  width: 976px;
+  height: 648px;
+}
+
+.berries {
+  position: absolute;
+  top: 777px;
+  left: 261px;
+  z-index: -2;
+}
+
+.fluffy {
+  position: absolute;
+  top: 1905px;
+  left: 45px;
+  z-index: -1;
+  width: 738px;
+  height: 620px;
+  opacity: 0.8;
+}
+
+.branch {
+  position: absolute;
+  top: 3256.17px;
+  left: -173.81px;
+  z-index: -1;
+  width: 876.3px;
+  height: 1278.24px;
+  transform: rotate(-156deg);
+}
+
+.flowers {
+  position: absolute;
+  top: 5042px;
+  left: 67%;
+  width: 638px;
+  height: 1196px;
+}
+
+.bush {
+  position: absolute;
+  top: 7231px;
+  left: 768px;
+  z-index: -1;
+  width: 399px;
+  height: 399px;
+}
