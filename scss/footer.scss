@@ -1,0 +1,57 @@
+.footer {
+  position: relative;
+  z-index: -1;
+  height: 874px;
+  margin-top: 22px;
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
+
+  &__contacts {
+    position: relative;
+    top: 228px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 531px;
+    height: 345px;
+
+    padding: 50px 0 66px 87px;
+
+    background: #f7f7fa;
+    box-shadow: 0 -6px 0 #515076;
+
+    &__title {
+      color: #757aa5;
+      font-weight: 200;
+      font-size: 70px;
+      font-family: Montserrat, serif;
+    }
+
+    &__phone {
+      color: #828282;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: Montserrat, serif;
+    }
+
+    &__address {
+      color: #828282;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      font-family: Montserrat, serif;
+    }
+
+    &__instagram {
+      margin-left: 25px;
+    }
+  }
+}

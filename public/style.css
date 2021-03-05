@@ -241,6 +241,54 @@
   opacity: 0.5;
 }
 
+.footer {
+  position: relative;
+  z-index: -1;
+  height: 874px;
+  margin-top: 22px;
+}
+.footer__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.footer__contacts {
+  position: relative;
+  top: 228px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 531px;
+  height: 345px;
+  padding: 50px 0 66px 87px;
+  background: #f7f7fa;
+  box-shadow: 0 -6px 0 #515076;
+}
+.footer__contacts__title {
+  color: #757aa5;
+  font-weight: 200;
+  font-size: 70px;
+  font-family: Montserrat, serif;
+}
+.footer__contacts__phone {
+  color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Montserrat, serif;
+}
+.footer__contacts__address {
+  color: #828282;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  font-family: Montserrat, serif;
+}
+.footer__contacts__instagram {
+  margin-left: 25px;
+}
+
 .header {
   display: flex;
   align-items: center;
