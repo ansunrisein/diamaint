@@ -1,33 +1,16 @@
 .promo-product {
   display: flex;
   flex-direction: column;
-
-  width: 350px;
+  width: 27vw;
 
   background: #f7f7fa;
 
   color: #515076;
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
+  font-size: large;
   font-family: Montserrat, serif;
   line-height: 24px;
-
-  & + & {
-    margin-left: 35px;
-  }
-
-  &_small {
-    height: 600px;
-  }
-
-  &_medium {
-    height: 700px;
-  }
-
-  &_big {
-    height: 800px;
-  }
 
   &__discount {
     display: flex;
@@ -35,13 +18,13 @@
     justify-content: center;
 
     color: #515076;
-    font-size: 36px;
+    font-size: 2.3vmin;
     font-family: Montserrat, serif;
     line-height: 49px;
   }
 
   &_small &__discount {
-    height: 100px;
+    height: 6.5vmin;
     margin-bottom: 7px;
 
     background: rgba(81, 80, 118, 0.1);
@@ -49,7 +32,7 @@
   }
 
   &_medium &__discount {
-    height: 150px;
+    height: 9.7vmin;
     margin-bottom: 57px;
 
     background: rgba(81, 80, 118, 0.15);
@@ -57,7 +40,7 @@
   }
 
   &_big &__discount {
-    height: 200px;
+    height: 13vmin;
     margin-bottom: 107px;
 
     background: rgba(81, 80, 118, 0.2);
@@ -66,20 +49,20 @@
 
   &__description {
     flex: 1;
-    margin: 10px 40px 0;
+    margin: 10px 20px 0;
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
 
-    margin: 0 40px 35px;
+    margin: 0 20px 35px;
   }
 
   &__price {
     color: #515076;
     font-weight: 500;
-    font-size: 20px;
+    font-size: larger;
     font-family: Montserrat, serif;
     line-height: 135.99%;
   }
@@ -90,7 +73,7 @@
     color: rgba(81, 80, 118, 0.6);
     font-weight: 500;
     font-style: normal;
-    font-size: 18px;
+    font-size: small;
     font-family: Montserrat, serif;
     line-height: 24px;
     text-decoration-line: line-through;

@@ -1,4 +1,6 @@
 .authors {
+  position: relative;
+
   display: flex;
   align-items: flex-end;
   margin-top: 144px;
@@ -9,7 +11,7 @@
     color: #757aa5;
     font-weight: 200;
     font-style: normal;
-    font-size: 70px;
+    font-size: xxx-large;
     font-family: Montserrat, serif;
     line-height: 109.4%;
   }
@@ -18,7 +20,7 @@
     color: #515076;
     font-weight: 500;
     font-style: normal;
-    font-size: 20px;
+    font-size: large;
     font-family: Montserrat, serif;
     line-height: 199.99%;
   }
@@ -30,7 +32,7 @@
     color: #888794;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: medium;
     font-family: Montserrat, serif;
     line-height: 180%;
   }
@@ -39,12 +41,12 @@
     display: flex;
 
     margin-top: 40px;
-    padding-right: 196px;
+    padding-right: 12.7vw;
 
     color: #888794;
     font-weight: 600;
     font-style: normal;
-    font-size: 18px;
+    font-size: medium;
     font-family: Montserrat, serif;
     line-height: 160%;
     quotes: '“' '“';
@@ -52,12 +54,12 @@
     &::before {
       content: open-quote;
 
-      margin-right: 42px;
+      margin-right: 2.7vw;
 
       color: #77877f;
       font-weight: bold;
       font-style: normal;
-      font-size: 60px;
+      font-size: xx-large;
       font-family: Circe, serif;
       line-height: 54px;
     }
@@ -68,7 +70,7 @@
     justify-content: space-between;
 
     margin-top: 64px;
-    padding-right: 196px;
+    padding-right: 12.7vw;
   }
 
   &__mini-image {
@@ -77,5 +79,18 @@
     &[aria-disabled='true'] {
       opacity: 0.5;
     }
+  }
+
+  &__main-image {
+    width: 40vw;
+    padding-right: 5rem;
+  }
+
+  &__bush {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    z-index: -1;
+    width: 26vw;
   }
 }

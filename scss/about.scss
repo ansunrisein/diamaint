@@ -1,34 +1,39 @@
 .about {
+  position: relative;
   color: #888794;
-  font-size: 18px;
   font-family: Montserrat, serif;
-  line-height: 170%;
+  line-height: 1.6;
 
   &__title {
     margin: 128px 0 0;
 
     color: #515076;
-    font-size: 230px;
+    font-size: 15vmin;
     font-family: Playfair Display, serif;
     line-height: 92.4%;
   }
 
   &__description {
     display: grid;
-    grid-template-columns: 387px 391px 400px;
+    grid-template-columns: 385px 390px 400px;
 
     justify-content: space-between;
 
     margin-top: 60px;
+
+    @media (max-width: 1175px) {
+      grid-template-columns: 25vw 25vw 26vw;
+    }
   }
 
   &__origins {
     margin-top: 34px;
+    padding-right: 20px;
 
     color: #63678c;
-    font-size: 36px;
+    font-size: 3vmin;
     font-family: Montserrat, serif;
-    line-height: 132.67%;
+    line-height: 132%;
   }
 
   &__ingredients-control {
@@ -40,9 +45,8 @@
   }
 
   &__button-choose {
-    width: 270px;
     margin: 96px 0;
-    padding: 27px;
+    padding: 25px;
 
     border-radius: 100px;
 
@@ -50,9 +54,8 @@
     color: rgba(255, 255, 255, 0.9);
 
     font-weight: 600;
-    font-size: 13px;
+    font-size: 1.2vmin;
     font-family: Montserrat, serif;
-    line-height: 16px;
     letter-spacing: 0.32em;
     text-align: center;
     text-transform: uppercase;
@@ -64,7 +67,7 @@
 
     color: #888794;
     font-weight: 500;
-    font-size: 16px;
+    font-size: medium;
     font-family: Work Sans, serif;
     line-height: 29px;
     letter-spacing: 0.3em;
@@ -75,7 +78,7 @@
   &__star {
     margin-top: 536px;
     font-weight: 300;
-    font-size: 37px;
+    font-size: 3vmin;
   }
 
   &__natural-ingredients {
@@ -83,7 +86,7 @@
 
     color: #757aa5;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 3vmin;
     font-family: Montserrat, serif;
     line-height: 39px;
   }
@@ -99,5 +102,42 @@
 
   &__natural-force {
     margin-top: 32px;
+  }
+
+  &__dandelion {
+    position: absolute;
+    top: -50px;
+    right: -7vw;
+    z-index: -1;
+    width: 90vw;
+    opacity: 0.5;
+  }
+
+  &__eucalyptus {
+    position: absolute;
+    top: 250px;
+    left: -20%;
+    z-index: -1;
+
+    width: 49vw;
+
+    @media (min-width: 1920px) {
+      left: -50%;
+    }
+  }
+
+  &__berries {
+    position: absolute;
+    bottom: -40%;
+    left: 200px;
+    z-index: -2;
+
+    width: 76vw;
+
+    opacity: 0.5;
+
+    @media (min-width: 1920px) {
+      left: 16vw;
+    }
   }
 }

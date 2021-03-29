@@ -10,8 +10,7 @@
 
   color: #515076;
   font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
+  font-size: medium;
   font-family: Montserrat, serif;
 
   &__container {
@@ -28,11 +27,11 @@
   &__logo {
     width: 67px;
     height: 67px;
-    margin-right: 80px;
+    margin-right: 3vmin;
   }
 
   &__link {
-    margin-right: 25px;
+    margin-right: 1.3vmax;
     padding: 25px 15px;
     opacity: 0.5;
     transition: all 150ms linear;
@@ -47,6 +46,7 @@
   &__cart {
     position: relative;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
 
@@ -79,7 +79,7 @@
 
       color: #fff;
       font-weight: 600;
-      font-size: 14px;
+      font-size: small;
       line-height: 17px;
       text-transform: uppercase;
     }
@@ -93,7 +93,7 @@
   &__social-link {
     margin-left: 36px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: medium;
     line-height: 38px;
   }
 }

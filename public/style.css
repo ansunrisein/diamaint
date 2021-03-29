@@ -1,29 +1,35 @@
 @charset "UTF-8";
 .about {
+  position: relative;
   color: #888794;
-  font-size: 18px;
   font-family: Montserrat, serif;
-  line-height: 170%;
+  line-height: 1.6;
 }
 .about__title {
   margin: 128px 0 0;
   color: #515076;
-  font-size: 230px;
+  font-size: 15vmin;
   font-family: Playfair Display, serif;
   line-height: 92.4%;
 }
 .about__description {
   display: grid;
-  grid-template-columns: 387px 391px 400px;
+  grid-template-columns: 385px 390px 400px;
   justify-content: space-between;
   margin-top: 60px;
 }
+@media (max-width: 1175px) {
+  .about__description {
+    grid-template-columns: 25vw 25vw 26vw;
+  }
+}
 .about__origins {
   margin-top: 34px;
+  padding-right: 20px;
   color: #63678c;
-  font-size: 36px;
+  font-size: 3vmin;
   font-family: Montserrat, serif;
-  line-height: 132.67%;
+  line-height: 132%;
 }
 .about__ingredients-control {
   margin-top: 659px;
@@ -32,16 +38,14 @@
   margin-top: 72px;
 }
 .about__button-choose {
-  width: 270px;
   margin: 96px 0;
-  padding: 27px;
+  padding: 25px;
   border-radius: 100px;
   background: #515076;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 1.2vmin;
   font-family: Montserrat, serif;
-  line-height: 16px;
   letter-spacing: 0.32em;
   text-align: center;
   text-transform: uppercase;
@@ -51,7 +55,7 @@
   margin-left: auto;
   color: #888794;
   font-weight: 500;
-  font-size: 16px;
+  font-size: medium;
   font-family: Work Sans, serif;
   line-height: 29px;
   letter-spacing: 0.3em;
@@ -61,13 +65,13 @@
 .about__star {
   margin-top: 536px;
   font-weight: 300;
-  font-size: 37px;
+  font-size: 3vmin;
 }
 .about__natural-ingredients {
   margin-top: 96px;
   color: #757aa5;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 3vmin;
   font-family: Montserrat, serif;
   line-height: 39px;
 }
@@ -81,11 +85,44 @@
 .about__natural-force {
   margin-top: 32px;
 }
+.about__dandelion {
+  position: absolute;
+  top: -50px;
+  right: -7vw;
+  z-index: -1;
+  width: 90vw;
+  opacity: 0.5;
+}
+.about__eucalyptus {
+  position: absolute;
+  top: 250px;
+  left: -20%;
+  z-index: -1;
+  width: 49vw;
+}
+@media (min-width: 1920px) {
+  .about__eucalyptus {
+    left: -50%;
+  }
+}
+.about__berries {
+  position: absolute;
+  bottom: -40%;
+  left: 200px;
+  z-index: -2;
+  width: 76vw;
+  opacity: 0.5;
+}
+@media (min-width: 1920px) {
+  .about__berries {
+    left: 16vw;
+  }
+}
 
 .advice {
   width: 300px;
   height: 400px;
-  padding: 36px 14px 47px 48px;
+  padding: 35px 15px 45px 50px;
   border-top: 6px solid #515076;
   background: #f7f7fa;
 }
@@ -93,7 +130,7 @@
   color: #a5a3b9;
   font-weight: 500;
   font-style: normal;
-  font-size: 12px;
+  font-size: small;
   font-family: Montserrat, serif;
   line-height: 24px;
   letter-spacing: 0.23em;
@@ -104,7 +141,7 @@
   color: #515076;
   font-weight: normal;
   font-style: normal;
-  font-size: 20px;
+  font-size: large;
   font-family: Montserrat, serif;
   line-height: 27px;
 }
@@ -113,7 +150,7 @@
   color: #888794;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
+  font-size: medium;
   font-family: Montserrat, serif;
   line-height: 25px;
 }
@@ -123,7 +160,7 @@
   color: #515076;
   font-weight: 500;
   font-style: normal;
-  font-size: 12px;
+  font-size: small;
   font-family: Montserrat, serif;
   line-height: 24px;
   letter-spacing: 0.23em;
@@ -146,7 +183,7 @@
   color: #757aa5;
   font-weight: 200;
   font-style: normal;
-  font-size: 70px;
+  font-size: xxx-large;
   font-family: Montserrat, serif;
   line-height: 109.4%;
   text-align: center;
@@ -175,6 +212,7 @@
 }
 
 .authors {
+  position: relative;
   display: flex;
   align-items: flex-end;
   margin-top: 144px;
@@ -184,7 +222,7 @@
   color: #757aa5;
   font-weight: 200;
   font-style: normal;
-  font-size: 70px;
+  font-size: xxx-large;
   font-family: Montserrat, serif;
   line-height: 109.4%;
 }
@@ -192,7 +230,7 @@
   color: #515076;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size: large;
   font-family: Montserrat, serif;
   line-height: 199.99%;
 }
@@ -202,29 +240,29 @@
   color: #888794;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
+  font-size: medium;
   font-family: Montserrat, serif;
   line-height: 180%;
 }
 .authors__quote {
   display: flex;
   margin-top: 40px;
-  padding-right: 196px;
+  padding-right: 12.7vw;
   color: #888794;
   font-weight: 600;
   font-style: normal;
-  font-size: 18px;
+  font-size: medium;
   font-family: Montserrat, serif;
   line-height: 160%;
   quotes: "“" "“";
 }
 .authors__quote::before {
   content: open-quote;
-  margin-right: 42px;
+  margin-right: 2.7vw;
   color: #77877f;
   font-weight: bold;
   font-style: normal;
-  font-size: 60px;
+  font-size: xx-large;
   font-family: Circe, serif;
   line-height: 54px;
 }
@@ -232,7 +270,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 64px;
-  padding-right: 196px;
+  padding-right: 12.7vw;
 }
 .authors__mini-image {
   filter: drop-shadow(0 -6px 0 #515076);
@@ -240,12 +278,24 @@
 .authors__mini-image[aria-disabled=true] {
   opacity: 0.5;
 }
+.authors__main-image {
+  width: 40vw;
+  padding-right: 5rem;
+}
+.authors__bush {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  z-index: -1;
+  width: 26vw;
+}
 
 .footer {
   position: relative;
   z-index: -1;
   height: 874px;
   margin-top: 22px;
+  font-family: Montserrat, serif;
 }
 .footer__background {
   position: absolute;
@@ -269,21 +319,18 @@
 .footer__contacts__title {
   color: #757aa5;
   font-weight: 200;
-  font-size: 70px;
-  font-family: Montserrat, serif;
+  font-size: xxx-large;
 }
 .footer__contacts__phone {
   color: #828282;
   font-weight: 500;
-  font-size: 16px;
-  font-family: Montserrat, serif;
+  font-size: medium;
 }
 .footer__contacts__address {
   color: #828282;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
-  font-family: Montserrat, serif;
+  font-size: medium;
 }
 .footer__contacts__instagram {
   margin-left: 25px;
@@ -298,8 +345,7 @@
   background: #edecf7;
   color: #515076;
   font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
+  font-size: medium;
   font-family: Montserrat, serif;
 }
 .header__container {
@@ -314,10 +360,10 @@
 .header__logo {
   width: 67px;
   height: 67px;
-  margin-right: 80px;
+  margin-right: 3vmin;
 }
 .header__link {
-  margin-right: 25px;
+  margin-right: 1.3vmax;
   padding: 25px 15px;
   opacity: 0.5;
   transition: all 150ms linear;
@@ -330,6 +376,7 @@
 .header__cart {
   position: relative;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 60px;
@@ -355,7 +402,7 @@
   background: #757aa5;
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: small;
   line-height: 17px;
   text-transform: uppercase;
 }
@@ -366,95 +413,48 @@
 .header__social-link {
   margin-left: 36px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: medium;
   line-height: 38px;
 }
 
 .layout {
-  width: 1388px;
+  width: 90vw;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 2vw;
 }
-
-.dandelion {
-  position: absolute;
-  top: -50px;
-  left: 469px;
-  z-index: -1;
-  width: 1455px;
-  height: 1113px;
-}
-
-.eucalyptus {
-  position: absolute;
-  top: 710px;
-  left: -160px;
-  z-index: -1;
-  width: 976px;
-  height: 648px;
-}
-
-.berries {
-  position: absolute;
-  top: 777px;
-  left: 261px;
-  z-index: -2;
-}
-
-.fluffy {
-  position: absolute;
-  top: 1905px;
-  left: 45px;
-  z-index: -1;
-  width: 738px;
-  height: 620px;
-  opacity: 0.8;
-}
-
-.branch {
-  position: absolute;
-  top: 3256.17px;
-  left: -173.81px;
-  z-index: -1;
-  width: 876.3px;
-  height: 1278.24px;
-  transform: rotate(-156deg);
-}
-
-.flowers {
-  position: absolute;
-  top: 5042px;
-  left: 67%;
-  width: 638px;
-  height: 1196px;
-}
-
-.bush {
-  position: absolute;
-  top: 7231px;
-  left: 768px;
-  z-index: -1;
-  width: 399px;
-  height: 399px;
+@media (min-width: 1920px) {
+  .layout {
+    width: 60vw;
+  }
 }
 
 .offers {
-  margin-top: 510px;
+  position: relative;
+  margin-top: 400px;
 }
 .offers__choose {
   color: #757aa5;
   font-weight: 200;
-  font-size: 70px;
+  font-size: 4.5vw;
   font-family: Montserrat, serif;
   line-height: 109.4%;
   text-align: center;
 }
 .offers__cards {
   display: flex;
+  gap: 0.5rem;
   align-items: flex-end;
-  justify-content: space-between;
-  width: 1098px;
-  margin: 80px auto 0;
+  justify-content: space-around;
+  margin: 80px 0 0;
+}
+.offers__fluffy {
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  z-index: -1;
+  width: 48vw;
+  opacity: 0.8;
 }
 
 .pagination__button-prev {
@@ -482,18 +482,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 329px;
-  height: 521px;
-  padding: 62px 20px 49px;
+  width: 22vmax;
+  height: 100%;
+  padding: 62px 10px 49px;
   background: #f7f7fa;
 }
 .product-card_big {
-  width: 380px;
-  height: 600px;
+  width: 24vmax;
+  height: 100%;
   padding-top: 69px;
 }
 .product-card_big .product-card__price {
-  font-size: 24px;
+  font-size: large;
 }
 .product-card__description {
   flex: 1;
@@ -502,31 +502,31 @@
 .product-card__type {
   color: #a5a3b9;
   font-weight: 500;
-  font-size: 12px;
+  font-size: small;
   font-family: Montserrat, serif;
-  line-height: 199.99%;
+  line-height: 1.3;
   letter-spacing: 0.23em;
   text-transform: uppercase;
 }
 .product-card__name {
   margin-top: 9px;
   color: #515076;
-  font-size: 20px;
+  font-size: large;
   font-family: Montserrat, serif;
-  line-height: 135.99%;
+  line-height: 1.3;
 }
 .product-card__price {
   color: #515076;
   font-weight: 500;
-  font-size: 20px;
+  font-size: larger;
   font-family: Montserrat, serif;
-  line-height: 135.99%;
+  line-height: 1.3;
 }
 .product-card__old-price {
   margin-right: 15px;
   color: rgba(81, 80, 118, 0.6);
   font-weight: 500;
-  font-size: 18px;
+  font-size: small;
   font-family: Montserrat, serif;
   line-height: 135.99%;
   text-decoration-line: line-through;
@@ -538,6 +538,7 @@
 }
 .product-card__footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 18px;
 }
@@ -545,67 +546,55 @@
 .promo-product {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 27vw;
   background: #f7f7fa;
   color: #515076;
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
+  font-size: large;
   font-family: Montserrat, serif;
   line-height: 24px;
-}
-.promo-product + .promo-product {
-  margin-left: 35px;
-}
-.promo-product_small {
-  height: 600px;
-}
-.promo-product_medium {
-  height: 700px;
-}
-.promo-product_big {
-  height: 800px;
 }
 .promo-product__discount {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #515076;
-  font-size: 36px;
+  font-size: 2.3vmin;
   font-family: Montserrat, serif;
   line-height: 49px;
 }
 .promo-product_small .promo-product__discount {
-  height: 100px;
+  height: 6.5vmin;
   margin-bottom: 7px;
   background: rgba(81, 80, 118, 0.1);
   font-weight: normal;
 }
 .promo-product_medium .promo-product__discount {
-  height: 150px;
+  height: 9.7vmin;
   margin-bottom: 57px;
   background: rgba(81, 80, 118, 0.15);
   font-weight: 500;
 }
 .promo-product_big .promo-product__discount {
-  height: 200px;
+  height: 13vmin;
   margin-bottom: 107px;
   background: rgba(81, 80, 118, 0.2);
   font-weight: 600;
 }
 .promo-product__description {
   flex: 1;
-  margin: 10px 40px 0;
+  margin: 10px 20px 0;
 }
 .promo-product__footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 40px 35px;
+  margin: 0 20px 35px;
 }
 .promo-product__price {
   color: #515076;
   font-weight: 500;
-  font-size: 20px;
+  font-size: larger;
   font-family: Montserrat, serif;
   line-height: 135.99%;
 }
@@ -614,7 +603,7 @@
   color: rgba(81, 80, 118, 0.6);
   font-weight: 500;
   font-style: normal;
-  font-size: 18px;
+  font-size: small;
   font-family: Montserrat, serif;
   line-height: 24px;
   text-decoration-line: line-through;
@@ -622,9 +611,11 @@
 
 .promo {
   position: relative;
-  width: 800px;
-  height: 521px;
-  padding: 58px 0 58px 63px;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  margin-left: 5rem;
+  padding: 3.5vmin 0 3.5vmin 3.6vmin;
   background: #f7f7fa;
   box-shadow: -40px 40px 0 #515076;
 }
@@ -636,7 +627,7 @@
   color: #fff;
   font-weight: 500;
   font-style: normal;
-  font-size: 13px;
+  font-size: small;
   font-family: Montserrat, serif;
   line-height: 26px;
   letter-spacing: 0.17em;
@@ -656,33 +647,36 @@
   border-radius: 50%;
   background: #edecf7;
   color: #515076;
-  font-size: 18px;
+  font-size: large;
   font-family: Montserrat, serif;
-  line-height: 109.4%;
+  line-height: 1.3;
   font-feature-settings: "pnum" on, "onum" on;
 }
 .promo__title {
-  width: 337px;
+  width: 22vw;
   margin-bottom: 40px;
+  padding-right: 10px;
   color: #4c5072;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 2vmin;
   font-family: Montserrat, serif;
-  line-height: 130%;
+  line-height: 1.3;
 }
 .promo__description {
-  width: 433px;
+  width: 28vw;
+  padding-right: 30px;
   color: #888794;
   font-weight: 500;
-  font-size: 16px;
+  font-size: medium;
   font-family: Montserrat, serif;
-  line-height: 199.99%;
+  line-height: 1.2;
 }
 .promo__image {
   float: right;
 }
 
 .promos {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 180px;
@@ -695,25 +689,36 @@
   color: #757aa5;
   font-weight: 200;
   font-style: normal;
-  font-size: 70px;
+  font-size: 4.5vw;
   font-family: Montserrat, serif;
-  line-height: 109.4%;
+  line-height: 1.3;
 }
 .promos__text {
-  width: 333px;
+  width: 22vw;
   margin: 100px 0 110px;
   color: #888794;
   font-weight: 500;
   font-style: normal;
-  font-size: 18px;
+  font-size: large;
   font-family: Montserrat, serif;
-  line-height: 199.99%;
+  line-height: 1.3;
 }
 .promos__products {
   display: flex;
+  gap: 2rem;
   align-items: flex-end;
   align-self: center;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 270px;
+}
+.promos__branch {
+  position: absolute;
+  top: -10%;
+  left: -30%;
+  z-index: -1;
+  width: 57vw;
+  transform: rotate(-156deg);
 }
 
 body {
@@ -772,7 +777,7 @@ p {
   color: #d6d4e7;
   font-weight: normal;
   font-style: normal;
-  font-size: 330px;
+  font-size: 21.5vmin;
   font-family: Playfair Display, serif;
   line-height: 305px;
 }
@@ -782,7 +787,7 @@ p {
   color: #a5a3b9;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
+  font-size: medium;
   font-family: Montserrat, serif;
   line-height: 29px;
   letter-spacing: 0.3em;
@@ -792,7 +797,7 @@ p {
   color: #515076;
   font-weight: 300;
   font-style: normal;
-  font-size: 120px;
+  font-size: 7.8vmin;
   font-family: Montserrat, serif;
   line-height: 131px;
 }
@@ -800,7 +805,7 @@ p {
   margin-top: 42px;
   color: #515076;
   font-weight: 200;
-  font-size: 70px;
+  font-size: 4.5vw;
   font-family: Montserrat, serif;
   line-height: 77px;
 }
@@ -809,7 +814,7 @@ p {
   color: #888794;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
+  font-size: medium;
   font-family: Montserrat, serif;
   line-height: 32px;
 }
@@ -817,13 +822,26 @@ p {
   position: relative;
   z-index: -1;
   flex-shrink: 0;
-  width: 899px;
-  height: 890px;
+  width: 58.5vw;
+  padding-right: 4rem;
+}
+@media (min-width: 1920px) {
+  .statistic__image-wrapper {
+    width: 31.5vw;
+    padding-right: 8rem;
+  }
 }
 .statistic__image {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+.statistic__flowers {
+  position: absolute;
+  top: 0;
+  left: 67%;
+  z-index: -1;
+  width: 42vw;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@
     color: #d6d4e7;
     font-weight: normal;
     font-style: normal;
-    font-size: 330px;
+    font-size: 21.5vmin;
     font-family: Playfair Display, serif;
     line-height: 305px;
   }
@@ -37,7 +37,7 @@
     color: #a5a3b9;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: medium;
     font-family: Montserrat, serif;
     line-height: 29px;
     letter-spacing: 0.3em;
@@ -48,7 +48,7 @@
     color: #515076;
     font-weight: 300;
     font-style: normal;
-    font-size: 120px;
+    font-size: 7.8vmin;
     font-family: Montserrat, serif;
     line-height: 131px;
   }
@@ -58,7 +58,7 @@
 
     color: #515076;
     font-weight: 200;
-    font-size: 70px;
+    font-size: 4.5vw;
     font-family: Montserrat, serif;
     line-height: 77px;
   }
@@ -69,25 +69,38 @@
     color: #888794;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: medium;
     font-family: Montserrat, serif;
     line-height: 32px;
   }
 
   &__image-wrapper {
     position: relative;
-
     z-index: -1;
 
     flex-shrink: 0;
 
-    width: 899px;
-    height: 890px;
+    width: 58.5vw;
+
+    padding-right: 4rem;
+
+    @media (min-width: 1920px) {
+      width: 31.5vw;
+      padding-right: 8rem;
+    }
   }
 
   &__image {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  &__flowers {
+    position: absolute;
+    top: 0;
+    left: 67%;
+    z-index: -1;
+    width: 42vw;
   }
 }

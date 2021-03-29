@@ -3,6 +3,7 @@
   z-index: -1;
   height: 874px;
   margin-top: 22px;
+  font-family: Montserrat, serif;
 
   &__background {
     position: absolute;
@@ -31,23 +32,20 @@
     &__title {
       color: #757aa5;
       font-weight: 200;
-      font-size: 70px;
-      font-family: Montserrat, serif;
+      font-size: xxx-large;
     }
 
     &__phone {
       color: #828282;
       font-weight: 500;
-      font-size: 16px;
-      font-family: Montserrat, serif;
+      font-size: medium;
     }
 
     &__address {
       color: #828282;
       font-weight: 500;
       font-style: normal;
-      font-size: 16px;
-      font-family: Montserrat, serif;
+      font-size: medium;
     }
 
     &__instagram {

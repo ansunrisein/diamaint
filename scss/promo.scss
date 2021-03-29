@@ -1,10 +1,13 @@
 .promo {
   position: relative;
 
-  width: 800px;
-  height: 521px;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
 
-  padding: 58px 0 58px 63px;
+  margin-left: 5rem;
+
+  padding: 3.5vmin 0 3.5vmin 3.6vmin;
 
   background: #f7f7fa;
   box-shadow: -40px 40px 0 #515076;
@@ -17,7 +20,7 @@
     color: #fff;
     font-weight: 500;
     font-style: normal;
-    font-size: 13px;
+    font-size: small;
     font-family: Montserrat, serif;
     line-height: 26px;
     letter-spacing: 0.17em;
@@ -42,30 +45,32 @@
     background: #edecf7;
 
     color: #515076;
-    font-size: 18px;
+    font-size: large;
     font-family: Montserrat, serif;
-    line-height: 109.4%;
+    line-height: 1.3;
     font-feature-settings: 'pnum' on, 'onum' on;
   }
 
   &__title {
-    width: 337px;
+    width: 22vw;
     margin-bottom: 40px;
+    padding-right: 10px;
 
     color: #4c5072;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 2vmin;
     font-family: Montserrat, serif;
-    line-height: 130%;
+    line-height: 1.3;
   }
 
   &__description {
-    width: 433px;
+    width: 28vw;
+    padding-right: 30px;
     color: #888794;
     font-weight: 500;
-    font-size: 16px;
+    font-size: medium;
     font-family: Montserrat, serif;
-    line-height: 199.99%;
+    line-height: 1.2;
   }
 
   &__image {
