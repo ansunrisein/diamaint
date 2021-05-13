@@ -107,15 +107,20 @@
 }
 .about__berries {
   position: absolute;
-  bottom: -40%;
+  bottom: -400px;
   left: 200px;
   z-index: -2;
-  width: 76vw;
+  width: 60vw;
   opacity: 0.5;
 }
 @media (min-width: 1920px) {
   .about__berries {
-    left: 16vw;
+    left: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  .about__berries {
+    bottom: -600px;
   }
 }
 
